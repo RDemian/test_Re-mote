@@ -1,0 +1,42 @@
+.front {
+  position: relative;
+  background-image: url("../img/front__bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Пример медиа-запроса. Подробнее здесь: https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints */
+
+  @include media-breakpoint-down(md) {
+//    min-height: 0;
+  }
+  
+  &__content {
+    position: relative;
+    z-index: 2;
+    margin-top: 362px;
+  }
+  
+  &__dscr {
+    max-width: 700px;
+    margin: 0 auto;
+    
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;  
+  }
+}
