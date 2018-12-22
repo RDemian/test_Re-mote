@@ -2,8 +2,18 @@
     padding: 14px 50px;
     font-family: inherit;
     font-size: 18px;
+    line-height: 1;
     text-align: center;
     color: #FFFFFF;
-    background: #EA555D;
+    background-color: #E73741;
     border-radius: 5px;
+
+    &:hover {
+        color: #FFFFFF;
+        background-color: #EA555D;
+    }
+
+    &:active {
+        color: #bb1620;
+    }
 }

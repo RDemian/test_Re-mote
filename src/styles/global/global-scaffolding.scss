@@ -1,9 +1,18 @@
 html {
+    box-sizing: border-box;
+
     font-family: "Fira Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-    
+    display: flex;
+    flex-direction: column;
 }
