@@ -3,10 +3,13 @@
     flex-direction: column;
 
     .input {
+        padding: 9px 15px 11px;
         background: #FFFFFF;
         border: 1px solid #BDBDBD;
         border-radius: 5px;
-        padding: 9px 15px 11px;
+        
+        font-size: 16px;
+        line-height: 1;
     }
 
     .button {
